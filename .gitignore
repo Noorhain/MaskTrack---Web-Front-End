@@ -1,0 +1,32 @@
+.DS_STORE
+
+/dist/
+.idea
+/bazel-out
+/integration/bazel/bazel-*
+*.log
+node_modules
+
+
+# Ignore npm
+npm-debug.log
+
+# build-analytics
+.build-analytics
+
+# rollup-test output
+/modules/rollup-test/dist/
+
+# User specific bazel settings
+.bazelrc.user
+
+# User specific ng-dev settings
+.ng-dev.user*
+
+.notes.md
+baseline.json
+
+# Ignore .history for the xyz.local-history VSCode extension
+.history
+
+
