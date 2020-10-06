@@ -1,0 +1,15 @@
+@import '../../styles/abstract/_variables.scss';
+
+.menu {
+  display: flex;
+  align-items: center;
+  height: $height-s;
+  padding: $padding-m $padding-s;
+  background-color: palevioletred;
+
+  &__link {
+    background-color: forestgreen;
+    padding: $padding-s;
+  }
+}
+
