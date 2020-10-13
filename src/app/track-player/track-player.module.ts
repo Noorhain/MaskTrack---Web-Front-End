@@ -6,6 +6,7 @@ import {TrackPlayerComponent} from './track-player.component';
 import {CurrentMaskComponent} from './current-mask/current-mask.component';
 import {CurrentMaskTimerComponent} from './current-mask-timer/current-mask-timer.component';
 import {TrackPlayerRoutingModule} from './track-player-routing.module';
+import {MaterialModule} from '../material.module';
 
 
 @NgModule({
@@ -16,8 +17,9 @@ import {TrackPlayerRoutingModule} from './track-player-routing.module';
     ],
     imports: [
         FontAwesomeModule,
-        TrackPlayerRoutingModule,
-        CommonModule
+        CommonModule,
+        MaterialModule,
+        TrackPlayerRoutingModule
     ],
     exports: [
         TrackPlayerComponent

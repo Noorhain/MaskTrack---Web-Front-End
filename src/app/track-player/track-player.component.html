@@ -1,13 +1,25 @@
 <article class="container max-w-screen-sm">
     <section class="menu">
         <a href="/" class="menu__link flex-grow">
-            <fa-icon [icon]="faUser" size="2x"></fa-icon>
+            <button class="menu__button" mat-icon-button aria-label="User panel">
+                <mat-icon class="menu__button--white" aria-hidden="false" aria-label="User panel icon">
+                    account_circle
+                </mat-icon>
+            </button>
         </a>
-        <a href="/" class="menu__link px-5">
-            <fa-icon [icon]="faPlusSquare" size="2x"></fa-icon>
+        <a href="" class="menu__link">
+            <button class="menu__button" mat-icon-button aria-label="Add mask">
+                <mat-icon class="menu__button--white" aria-hidden="false" aria-label="Add mask icon">
+                    add
+                </mat-icon>
+            </button>
         </a>
-        <a href="/" class="menu__link">
-            <fa-icon [icon]="faDotCircle" size="2x"></fa-icon>
+        <a href="" class="menu__link">
+            <button class="menu__button" mat-icon-button aria-label="More options">
+                <mat-icon class="menu__button--white" aria-hidden="false" aria-label="More options icon">
+                    more_vert
+                </mat-icon>
+            </button>
         </a>
     </section>
     <section>

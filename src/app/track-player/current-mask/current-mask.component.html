@@ -2,15 +2,19 @@
     <img class="mx-auto mb-10" src="https://source.unsplash.com/random/500x300" alt="Picture of the current mask">
     <div class="current-mask__controls">
         <current-mask-timer></current-mask-timer>
-        <div class="controls pt-10">
-            <button class="controls__control">
-                <fa-icon [icon]="faPlayCircle" size="2x"></fa-icon>
+        <div class="controls pt-10 w-2/3 m-auto">
+            <button mat-fab aria-label="Start">
+                <mat-icon class="controls__control--white" aria-hidden="false" aria-label="Start icon">
+                    play_arrow
+                </mat-icon>
             </button>
-            <button class="controls__control">
-                <fa-icon [icon]="faPauseCircle" size="2x"></fa-icon>
+            <button mat-fab aria-label="Stop">
+                <mat-icon class="controls__control--white" aria-hidden="false" aria-label="Pause icon">pause
+                </mat-icon>
             </button>
-            <button class="controls__control">
-                <fa-icon [icon]="faSquare" size="2x"></fa-icon>
+            <button mat-fab aria-label="Archive">
+                <mat-icon class="controls__control--white" aria-hidden="false" aria-label="Archive icon">stop
+                </mat-icon>
             </button>
         </div>
     </div>

@@ -11,5 +11,15 @@
     background-color: forestgreen;
     padding: $padding-s;
   }
+
+  &__button {
+    & mat-icon {
+      font-size: $size-l;
+    }
+
+    &--white {
+      color: $color-white;
+    }
+  }
 }
 
