@@ -1,5 +1,5 @@
 import {NgModule} from '@angular/core';
-import {MaskService} from './mask.service';
+import {MaskService} from './services/mask.service';
 
 @NgModule({
     providers: [

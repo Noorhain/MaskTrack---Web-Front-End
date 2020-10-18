@@ -64,6 +64,16 @@
                   "maximumError": "10kb"
                 }
               ]
+            },
+            "local": {
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.local.ts"
+                }
+              ],
+              "optimization": false,
+              "sourceMap": true
             }
           }
         },
@@ -78,6 +88,9 @@
           "configurations": {
             "production": {
               "browserTarget": "user-front-end:build:production"
+            },
+            "local": {
+              "browserTarget": "user-front-end:build:local"
             }
           }
         },

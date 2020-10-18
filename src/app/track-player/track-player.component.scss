@@ -8,13 +8,12 @@
   background-color: palevioletred;
 
   &__link {
-    background-color: forestgreen;
     padding: $padding-s;
   }
 
   &__button {
     & mat-icon {
-      font-size: $size-l;
+      transform: scale(1.5);
     }
 
     &--white {

@@ -1,7 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {faUser} from '@fortawesome/free-regular-svg-icons/faUser';
-import {faPlusSquare} from '@fortawesome/free-regular-svg-icons/faPlusSquare';
-import {faDotCircle} from '@fortawesome/free-regular-svg-icons/faDotCircle';
+import {MaskService} from '../services/mask.service';
 
 
 @Component({
@@ -10,14 +8,16 @@ import {faDotCircle} from '@fortawesome/free-regular-svg-icons/faDotCircle';
     styleUrls: ['./track-player.component.scss']
 })
 export class TrackPlayerComponent implements OnInit {
-    faUser = faUser;
-    faPlusSquare = faPlusSquare;
-    faDotCircle = faDotCircle;
 
-    constructor() {
+    constructor(
+        private maskService: MaskService
+    ) {
     }
 
     ngOnInit(): void {
+        this.maskService.masksTest().subscribe((data) => {
+            console.log(data);
+        });
     }
 
 }
