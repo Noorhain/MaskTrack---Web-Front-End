@@ -8,7 +8,7 @@ import {MaskService} from '../services/mask.service';
     styleUrls: ['./track-player.component.scss']
 })
 export class TrackPlayerComponent implements OnInit {
-
+// TODO Incorporar botones de siguiente y anterior para cambiar de mascarilla
     constructor(
         private maskService: MaskService
     ) {
