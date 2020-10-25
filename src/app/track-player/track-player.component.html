@@ -22,19 +22,25 @@
             </button>
         </a>
     </section>
-    <section>
+    <section class="current-mask">
         <current-mask></current-mask>
-        <article class="pruebas">
-            <button class="menu__button" mat-icon-button aria-label="More options">
-                <mat-icon class="menu__button--white" aria-hidden="false" aria-label="More options icon">
-                    more_vert
-                </mat-icon>
-            </button>
-            <button class="menu__button" mat-icon-button aria-label="More options">
-                <mat-icon class="menu__button--white" aria-hidden="false" aria-label="More options icon">
-                    more_verts
-                </mat-icon>
-            </button>
-        </article>
+        <div class="current-mask__controls">
+            <div class="controls pt-10 w-2/3 m-auto">
+                <button mat-fab aria-label="Previous mask">
+                    <mat-icon class="controls__control--white" aria-hidden="false" aria-label="Previous mask icon">
+                        fast_rewind
+                    </mat-icon>
+                </button>
+                <button mat-fab aria-label="Start and stop">
+                    <mat-icon class="controls__control--white" aria-hidden="false" aria-label="Start and stop icon">play_arrow
+                    </mat-icon>
+                </button>
+                <button mat-fab aria-label="Next mask">
+                    <mat-icon class="controls__control--white" aria-hidden="false" aria-label="Next mask icon">
+                        fast_forward
+                    </mat-icon>
+                </button>
+            </div>
+        </div>
     </section>
 </article>
