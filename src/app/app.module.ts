@@ -6,6 +6,7 @@ import {AppComponent} from './app.component';
 import {TrackPlayerModule} from './track-player/track-player.module';
 import {CoreModule} from './core.module';
 import {HttpClientModule} from '@angular/common/http';
+import {AuthModule} from './auth/auth.module';
 
 @NgModule({
     declarations: [
@@ -15,6 +16,7 @@ import {HttpClientModule} from '@angular/common/http';
         BrowserModule,
         AppRoutingModule,
         TrackPlayerModule,
+        AuthModule,
         CoreModule,
         HttpClientModule
     ],

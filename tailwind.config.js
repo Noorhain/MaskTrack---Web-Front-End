@@ -5,10 +5,7 @@ module.exports = {
   },
   purge: [],
   theme: {
-    extend: {},
-    container: {
-      center: true
-    }
+    extend: {}
   },
   variants: {},
   plugins: [],
