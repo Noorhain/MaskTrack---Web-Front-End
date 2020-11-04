@@ -1,3 +1,14 @@
-<article class="container login m-auto h-screen max-w-screen-sm flex flex-col">
-Seccion de Login
-</article>
+<form class="login-form">
+    <mat-form-field appearance="outline">
+        <mat-label>Email address</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <mat-form-field appearance="outline">
+        <mat-label>Password</mat-label>
+        <input matInput>
+    </mat-form-field>
+    <div class="login-form__group">
+        <button mat-flat-button color="primary" type="submit">Log in</button>
+        <p class="login-form__group--hint-right flex-grow">Forgot Password?</p>
+    </div>
+</form>

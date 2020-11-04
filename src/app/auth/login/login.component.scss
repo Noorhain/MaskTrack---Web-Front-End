@@ -1,5 +1,21 @@
 @import '../../../styles/abstract/_variables.scss';
 
 .login {
-  background-color: dodgerblue;
+  background-color: lightblue;
+}
+
+.login-form {
+  display: flex;
+  flex-direction: column;
+  padding: $padding-s $padding-xl;
+
+  &__group {
+    display: flex;
+
+    &--hint-right {
+      text-align: right;
+      font-size: $size-s;
+      color: $color-gray;
+    }
+  }
 }

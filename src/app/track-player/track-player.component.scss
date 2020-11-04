@@ -37,6 +37,7 @@
 .controls {
   display: flex;
   justify-content: space-around;
+  padding-top: $padding-xl;
   &__control {
     &--white {
       color: $color-white;

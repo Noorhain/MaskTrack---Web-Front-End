@@ -1,6 +1,8 @@
 @import 'tailwindcss/base.css';
 @import 'tailwindcss/components.css';
 @import 'tailwindcss/utilities.css';
+@import '@angular/material/_theming.scss';
 @import 'https://fonts.googleapis.com/icon?family=Material+Icons';
 @import 'abstract/_variables.scss';
 @import 'base/_reset.scss';
+@import 'base/_material-theme-override.scss';

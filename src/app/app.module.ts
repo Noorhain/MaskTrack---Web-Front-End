@@ -7,6 +7,7 @@ import {TrackPlayerModule} from './track-player/track-player.module';
 import {CoreModule} from './core.module';
 import {HttpClientModule} from '@angular/common/http';
 import {AuthModule} from './auth/auth.module';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
     declarations: [
@@ -14,6 +15,7 @@ import {AuthModule} from './auth/auth.module';
     ],
     imports: [
         BrowserModule,
+        BrowserAnimationsModule,
         AppRoutingModule,
         TrackPlayerModule,
         AuthModule,
