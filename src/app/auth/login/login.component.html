@@ -1,14 +1,21 @@
-<form class="login-form">
-    <mat-form-field appearance="outline">
+<form [formGroup]="loginForm" class="account-form" (click)="onSubmitLogin()">
+    <mat-form-field appearance="outline" class="account-form__group">
         <mat-label>Email address</mat-label>
-        <input matInput>
+        <input type="text"
+               matInput
+               formControlName="email">
     </mat-form-field>
-    <mat-form-field appearance="outline">
+    <mat-form-field appearance="outline" class="account-form__group">
         <mat-label>Password</mat-label>
-        <input matInput>
+        <input [type]="hide ? 'password' : 'text'"
+               matInput
+               formControlName="password"
+               placeholder="Password"
+        >
+        <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
     </mat-form-field>
-    <div class="login-form__group">
+    <div class="flex">
         <button mat-flat-button color="primary" type="submit">Log in</button>
-        <p class="login-form__group--hint-right flex-grow">Forgot Password?</p>
+        <p class="account-form__group--hint-right flex-grow">Forgot Password?</p>
     </div>
 </form>

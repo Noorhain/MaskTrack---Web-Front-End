@@ -1,0 +1,13 @@
+.account-form {
+  display: flex;
+  flex-direction: column;
+  padding: $padding-s $padding-xl;
+
+  &__group {
+    &--hint-right {
+      text-align: right;
+      font-size: $size-s;
+      color: $color-gray;
+    }
+  }
+}

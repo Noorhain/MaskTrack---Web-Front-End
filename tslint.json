@@ -143,10 +143,7 @@
       "camelCase"
     ],
     "component-selector": [
-      true,
-      "element",
-      "",
-      "kebab-case"
+      false
     ]
   }
 }

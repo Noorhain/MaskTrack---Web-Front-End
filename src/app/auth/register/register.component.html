@@ -1,0 +1,27 @@
+    <form [formGroup]="registerForm" class="account-form" (click)="onSubmitRegister()">
+        <mat-form-field appearance="outline">
+            <mat-label>Username</mat-label>
+            <input type="text"
+                   matInput
+                   formControlName="username">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Email address</mat-label>
+            <input type="text"
+                   matInput
+                   formControlName="email">
+        </mat-form-field>
+        <mat-form-field appearance="outline">
+            <mat-label>Password</mat-label>
+            <input [type]="hide ? 'password' : 'text'"
+                   matInput
+                   formControlName="password"
+                   placeholder="Password"
+            >
+            <mat-icon matSuffix (click)="hide = !hide">{{hide ? 'visibility_off' : 'visibility'}}</mat-icon>
+        </mat-form-field>
+        <div class="flex">
+            <button mat-flat-button color="primary" type="submit">Register</button>
+        </div>
+    </form>
+

@@ -1,4 +1,14 @@
 <article class="container login m-auto h-screen max-w-screen-sm flex flex-col justify-center">
-    <img style="max-width: 200px; margin: 0 auto;" src="./assets/mtlogo-auth.png" alt="">
-   <login></login>
+    <img *ngIf="!isNewAccount" class="max-w-xs content-center mx-auto mx-0 p-0" src="./assets/mtlogo-auth.png" alt="Mask Track logo">
+    <login *ngIf="!isNewAccount; else register"></login>
+    <ng-template #register>
+        <register></register>
+    </ng-template>
+    <div class="flex justify-center mt-4">
+        <p class="mr-5"
+           [innerHTML]="isNewAccount ? alreadyUserText : notUserText">Not a user?</p>
+        <span class="text-highlight"
+              (click)="onClickCreateAccount()"
+              [innerHTML]="isNewAccount ? logInText : registerText"></span>
+    </div>
 </article>

@@ -1,15 +1,28 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'auth',
-  templateUrl: './auth.component.html',
-  styleUrls: ['./auth.component.scss']
+    selector: 'auth',
+    templateUrl: './auth.component.html',
+    styleUrls: ['./auth.component.scss']
 })
 export class AuthComponent implements OnInit {
+    isNewAccount = false;
+    notUserText = 'Not a user?';
+    alreadyUserText = 'Already a user?';
+    logInText = 'Log in';
+    registerText = 'Create an account';
 
-  constructor() { }
+    constructor() {
+    }
 
-  ngOnInit(): void {
-  }
+    ngOnInit(): void {
+    }
 
+    toggleUserMessage(): void {
+
+    }
+
+    onClickCreateAccount(): void {
+        this.isNewAccount = !this.isNewAccount;
+    }
 }
